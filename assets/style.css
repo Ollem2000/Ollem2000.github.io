@@ -249,6 +249,7 @@ div.card
 			#hero
 			{
 				height: 100%;
+				background: red;
 				background-position: -128px;
 			}	
 			#aboutMe>article:nth-of-type(2)
