@@ -64,11 +64,11 @@ section
 		{
 			justify-content: space-evenly;
 		}
-		#aboutMe>article:nth-of-type(1), #aboutMe>article:nth-of-type(2)
+		#aboutMe>article
 		{
 			justify-content: center; gap: 32px;
 		}
-		#tools>article:nth-of-type(1)
+		#tools>article
 		{
 			justify-content: center;
 		}
@@ -194,11 +194,13 @@ div.card
 			background: black;
 			border: 1px solid black;
 		}
+
 .toolWindow
 {
 	border-left: 2px solid white;
 	height: calc(100% - 16px); width: 512px;
 	margin: -16px 0 0 0; padding: 0 16px;
+	display: none;
 }
 	.toolWindow>h4
 	{		
@@ -208,10 +210,7 @@ div.card
 	{
 		font-size: 16px;
 	}
-.s
-{
-	display: none;
-}
+
 
 .certificate
 {
@@ -258,17 +257,27 @@ div.card
 			{
 				flex-direction: row; justify-content: space-between;
 			}
-			#projects>article:nth-of-type(1)
+			#projects>article
 			{
 				border-radius: 64px;
 				overflow-x: auto;
 				align-items: top; justify-content: left; flex-direction: row; flex-wrap: nowrap; gap: 64px;
 				/*overflow-wrap: normal;*/
 			}
-			#projects>article:nth-of-type(1)>.card
+			#projects>article>.card
 			{
 				flex: 0 0 auto;
 			}
+			#tools>article
+			{
+				gap: 64px;
+			}
+				#tools>article>div:nth-of-type(1)
+				{
+					width: 100%;
+					display: flex; align-items: center; justify-content: center; flex-direction: row; gap: 64px;
+					flex-wrap: wrap;
+				}
 
 	#hero>h1
 	{
@@ -317,4 +326,46 @@ div.card
 		border-radius: 64px;
 		height: 898px; width: 640px;
 	}
+	
+	div.toolTab
+	{
+		height: calc(192px + 16px); width: calc(192px + 16px);
+		margin: 0; padding: 16px;		
+	}
+		.toolTab>img
+		{
+			height: 100%;
+			margin: 0;
+		}
+		.toolTab>p
+		{
+			display: none;
+		}
+		
+	div.toolWindow
+	{
+		min-height: 256px; width: 100%;
+		overflow-y: auto;
+	}
+		.toolWindow>h4
+		{
+			font-size: 56px;
+		}
+		.toolWindow>p
+		{
+			font-size: 48px;
+		}
+		
+	div.certificate
+	{
+		height: 128px;
+	}
+		.certificate>img
+		{
+			width: 128px;
+		}
+		.certificate>p
+		{
+			font-size: 32px;
+		}
 }
