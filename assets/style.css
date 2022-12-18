@@ -264,14 +264,18 @@ div.card
 				align-items: top; justify-content: left; flex-direction: row; flex-wrap: nowrap; gap: 64px;
 				/*overflow-wrap: normal;*/
 			}
-			#projects>article>.card
+				#projects>article>.card
+				{
+					flex: 0 0 auto;
+				}
+			#tools
 			{
-				flex: 0 0 auto;
+				height: auto;
 			}
-			#tools>article
-			{
-				gap: 64px;
-			}
+				#tools>article
+				{
+					gap: 64px;
+				}
 				#tools>article>div:nth-of-type(1)
 				{
 					width: 100%;
