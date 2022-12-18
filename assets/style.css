@@ -73,6 +73,7 @@ section
 			justify-content: center;
 		}
 
+/*multiplos*/
 a
 {
 	text-decoration: none;
@@ -115,6 +116,7 @@ h3
 	font-size: 2.5rem;
 }
 
+/*hero*/
 h1
 {
 	font-size: 48px;
@@ -124,6 +126,7 @@ h1>span
 {
 	font-size: 21px;
 }
+
 /*aboutMe*/
 #perfil>img
 {
@@ -266,6 +269,15 @@ div.card
 			{
 				flex: 0 0 auto;
 			}
+
+	#hero>h1
+	{
+		font-size: 9vw;
+	}
+	#hero>h1>span
+	{
+		font-size: 4vw;
+	}
 
 	#perfil>img
 	{
