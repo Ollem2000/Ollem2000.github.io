@@ -257,9 +257,9 @@ div.card
 			}
 			#projects>article:nth-of-type(1)
 			{
-				flex-wrap: nowrap;
+				border-radius: 64px;
 				overflow-x: auto;
-				align-items: top; justify-content: left; flex-direction: row; gap: 64px;
+				align-items: top; justify-content: left; flex-direction: row; flex-wrap: nowrap; gap: 64px;
 				/*overflow-wrap: normal;*/
 			}
 			#projects>article:nth-of-type(1)>.card
@@ -302,6 +302,7 @@ div.card
 		
 	div.card
 	{
+		border-radius: 64px;
 		height: 898px; width: 640px;
 	}
 }
